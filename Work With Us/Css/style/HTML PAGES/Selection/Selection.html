@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+	<title>Selection</title>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\Css\style\style.css">	
+
+<style>
+	
+	
+  div.container{
+					background-color:grey;
+					position:absolute;
+					width:150px;
+				
+			    }
+				
+	img{
+			width: 500px;
+			height:250px;
+	   }
+	   
+	body{
+			background-image:url("img/ea7364cd91458458ad86afaa2aa5585f.jpg");
+			
+	
+		}
+		
+	p{
+			color:green;
+		
+	 }
+	   
+</style>
+
+<script>
+	
+	
+	function toggleVisibility(id)
+	{
+		var x = document.getElementById(id);
+		
+		if(x.style.visibility=="visible"){
+				x.style.visibility="hidden";
+			
+		}
+		else{
+				x.style.visibility="visible";
+		}
+		
+	}
+	
+	function selectitem()
+	{
+		location.replace("file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/AddToCart/AddToCart.html");
+	
+	}
+
+</script>
+      
+
+</head>										
+
+<body>
+
+	<div class="navmain">
+
+        <div class="column50">
+            <div class="title">
+                ZARA.COM
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="search">
+			<a href="#">Dilshika Netthikumarage</a>
+                <input class="inputSearch" type="text" placeholder="search">
+                <button type="button" class="buttonSearch">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+       </div>
+	 </div>
+	
+<div class="topnav">
+
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Home/Home.html">Home</a>
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/About%20us/AboutUs.html">About Us</a>
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Contact%20us/contact.html">Contact Us</a>
+		<a class="active" href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Selection/Selection.html">Place Order</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Helpus/HelpUs.html">Help us</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Work%20With%20Us/workWithUs.html">Work with us</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/NewsLetter/newsLetter.html">Newsletter</a>
+
+		<div class="topnav-right">
+            <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Registration%20page/Registration.html">Sign Up</a>
+            <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Login%20page/Login.html">Login</a>
+        </div>
+
+</div>
+
+	   <h1 align="center">Selection</h1>
+			
+			<div class="container" align="left">
+				<h3>Categories</h3>
+				<h5>Men</h5>
+				<input type="checkbox" name="T-shirts" value="t-shirts" id="listtshirts" onchange = "toggleVisibility('blueshirt');">T-shirts</input><br>
+				<input type="checkbox" name="Shirts" value="shirts" id="listshirts" onchange="toggleVisibility('shirt');">Shirts</input><br>
+				<input type="checkbox" name="Trousers" value="trousers" id="listtrousers" onchange="toggleVisibility('trouser');">Trousers</input><br>
+				<input type="checkbox" name="Denims" value="denims">Denims</input><br>
+				<input type="checkbox" name="Shorts" value="shorts">Shorts</input><br>
+				<input type="checkbox" name="Underwear" value="underwear">Underwear</input><br></br>
+			
+			
+				<h5>Women</h5>
+				<input type="checkbox" name="T-shirts" value="t-shirts">T-shirts</input><br>
+				<input type="checkbox" name="Frocks" value="frocks" onchange="toggleVisibility('frock');">Frocks</input><br>
+				<input type="checkbox" name="Blouse" value="blouse" onchange="toggleVisibility('blouse');">Blouse</input><br>
+				<input type="checkbox" name="Denims" value="denims">Denims</input><br>
+				<input type="checkbox" name="Jeans" value="jeans">Jeans</input><br>
+				<input type="checkbox" name="Underwear" value="underwear">Underwear</input><br>
+				<input type="checkbox" name="Skirts" value="skirts">Skirts</input><br></br>
+			
+			
+				<h5>Kids</h5>
+				<input type="checkbox" name="T-shirts" value="t-shirts">T-shirts</input><br>
+				<input type="checkbox" name="Frocks" value="shirts">Shirts</input><br>
+				<input type="checkbox" name="Skirts" value="trousers">Trousers</input><br>
+				<input type="checkbox" name="Denims" value="denims">Denims</input><br>
+				<input type="checkbox" name="Shorts" value="shorts">Shorts</input><br>
+				<input type="checkbox" name="Underwear" value="underwear">Underwear</input><br></br>
+			
+			
+				<h5>Accessories</h5>
+				<input type="checkbox" name="Watches" value="watches" onchange="toggleVisibility('watch');">Watches</input><br>
+				<input type="checkbox" name="Tie" value="tie" onchange="toggleVisibility('tie')">Tie</input><br>
+				<input type="checkbox" name="Shoes" value="shoes">Shoes</input><br>
+				<input type="checkbox" name="Belts" value="belts">Belts</input><br>
+				<input type="checkbox" name="Wallets" value="wallets">Wallets</input><br>
+				<input type="checkbox" name="Caps" value="caps">Caps</input><br></br>
+			</div>
+			
+				<table align="center" border="1" width = "600px" height="250px">
+					<tr>
+					  <th>Item</th>
+					  <th>Description</th>
+					</tr>
+					</th>
+						<tr>
+						  <td><img id="blueshirt" src="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\img\goods_69_414349.jpg" onclick="selectitem()" style="visibility:hidden"/></td>
+						  <td><p>T-shirt (Men) Price $100</p>
+						  </tr>
+						  <tr>
+							<td><<img id="shirt" src="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\img\080201606669-C2_Formal-Shirt-2_Fashion-Bug.jpg" style="visibility:hidden"/></td>
+							<td><p>Square type shirt (Men) Price $50</p></td>
+							</tr>
+							<tr>
+							<td><img id="trouser" src="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\img\w750_be4e4e4.jpg" style="visibility:hidden"/></td>
+							<td><p>Trouser (Men) Price $120</p></td>
+							</tr>
+							<tr>
+							<td><img id="frock" src="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\img\download.jpg" style="visibility:hidden"/></td>
+							<td><p>Frock (Women) Price $40</p></td>
+							</tr>
+							<tr>
+							<td><img id="watch" src="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\img\71GT+6XuISL._AC_UY500_.jpg" style="visibility:hidden"/></td>
+							<td><p>Wrist Watch (Men) $95</p></td>
+							</tr>
+							<tr>
+							<td><img id="tie" src="C:\Users\Dilshika\Desktop\HTML PAGES\Selection\img\Custom-Print-Men-Silk-Tie.jpg" style="visibility:hidden"/></td>
+							<td><p>Tie(Men) Price $70</p></td>
+							</tr>
+					</table>
+					
+		
+
+			
+</body>
+</html>

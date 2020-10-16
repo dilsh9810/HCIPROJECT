@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="C:\Users\Dilshika\Desktop\HTML PAGES\AddToCart\Css\style\style.css">
+
+
+
+<title>
+	Add to cart 
+</title>
+
+<style>
+
+img{
+			width:  25%;
+			height: 50%;
+	   }
+		
+		
+					
+	Button.center{
+	
+					width:100%;
+					direction:center;
+				 }
+				
+		
+	body{
+			background-image:url("img/ea7364cd91458458ad86afaa2aa5585f.jpg");
+	    }
+		
+		
+	 h1
+	 {
+		color:green;
+	 
+	 }
+	 
+			
+	.bton{
+			 background-color:black;
+			 border: none;
+			 color:white;
+			 cursor: pointer;
+		
+		}
+		
+	
+			   
+	.form-container{
+						max-width:350px;
+						background-color:grey;
+				   }
+			
+			
+</style>
+
+
+<script>
+	function PagePayment(){
+	
+		location.replace("file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/CustomerPayment/CustomerPayment.html");
+	
+	}
+	
+	function Selectionlist(){
+		
+		location.replace("file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Selection/Selection.html");
+	
+	}
+	
+</script>
+
+</head>
+	
+<body>
+	<div class="navmain">
+
+        <div class="columnImage">
+            <img src="img/px.jpg" width="100%">
+        </div>
+
+        <div class="column50">
+            <div class="title">
+                ZARA.COM
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="search">
+			<a href="#">Dilshika Netthikumarage</a>
+                <input class="inputSearch" type="text" placeholder="search">
+                <button type="button" class="buttonSearch">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+	
+<div class="topnav">
+
+        <a class="#">Home</a>
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/About%20us/AboutUs.html">About Us</a>
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Contact%20us/contact.html">Contact Us</a>
+		<a class="#">Place Order</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Helpus/HelpUs.html">Help us</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Work%20With%20Us/workWithUs.html">Work with us</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/NewsLetter/newsLetter.html">Newsletter</a>
+
+		<div class="topnav-right">
+            <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Registration%20page/Registration.html">Sign Up</a>
+            <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Login%20page/Login.html">Login</a>
+        </div>
+
+</div>
+			
+			<h1 align="center">Add To Cart</h1>
+			
+			<div class="container" align="right">
+			<button type="button" class="bton" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></button>
+			<div class="modal" id="myModal">
+			<div class="modal-dialog">
+			<div class="modal-content">
+			
+			<div class="modal-header">
+				<img src="C:\Users\Dilshika\Desktop\HTML PAGES\AddToCart\img\goods_69_414349.jpg">
+			</div>
+		
+			<div class="modal-body">
+				<p align="left">T-shirt(Men)<br>
+				   Price: $100</br></p>
+			</div>
+		
+			<div class="model-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+			
+			</div>
+			</div>
+			</div>
+		</div>
+			
+			<img src="C:\Users\Dilshika\Desktop\HTML PAGES\AddToCart\img\goods_69_414349.jpg" class="mx-auto d-block"><br>
+			
+
+			<p align="center">Description : T-shirt (Men)<br>
+			 <input type="text" text-align="center" name="price" value="$100"></input></br>
+			   
+			<div class="border" align="center" border-width="auto" border-height="auto">
+			<label>Choose size:</label>
+			<select name="size">
+				<option value="s">Small</option>
+				<option value="r">Medium</option>
+				<option value="l">Large</option>
+				<option value="xl">Extra Large</option></select><br>
+				
+			<label>Choose Colour:</label>
+			<select name="color">
+				<option value="blk">Black</option>
+				<option value="blu">Blue</option>
+				<option value="wh">White</option></select></br>
+
+			<label>Quantity</label>
+				<input type="number" name="quantity" id="quantity" min="1" max="10" align="right"></input><br>
+				
+			<input type="Button" class="btn btn-danger" value= "Add to Cart" OnClick="PagePayment()"></input>
+			<input type="Button" class="btn btn-danger" value= "Back" OnClick="Selectionlist()"></input></br>
+			</div>
+		
+		<div class="footerHome" height="50%">
+        <div class="columnfooter">
+            <span>
+                <h3>Zara.com</h3>
+            
+        </div>
+        <div class="column50footer">
+            
+            <p>
+                <a style ="text-decoration:none; color:#fff !important;" href="privacy.html">Privacy Policy</a><br>
+				<a style ="text-decoration:none; color:#fff !important;" href="socialmedia.html">Facebook</a><br>
+				<a style ="text-decoration:none; color:#fff !important;" href="socialmedia.html">Twiiter</a><br>
+				<a style ="text-decoration:none; color:#fff !important;" href="socialmedia.html">Youtube</a></br>
+			</p>
+			<h5>Designed by RSPO(Pvt) Ltd.</h5>
+        </div>
+        <div class="columnfooterright">
+            <span>
+                <i class="fab fa-instagram icons"></i>
+                <i class="fab fa-facebook-f icons"></i>
+                <i class="fab fa-twitter icons"></i>
+            </span>
+        </div>
+    </div>
+	
+			
+</body>
+
+
+</html>

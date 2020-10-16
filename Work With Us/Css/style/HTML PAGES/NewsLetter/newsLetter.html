@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="C:\Users\Dilshika\Desktop\HTML PAGES\NewsLetter\Css\style\style.css">
+
+</head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+      
+
+
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+  
+}
+
+.container {
+  padding: 20px;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container1:hover input ~ .checkmark {
+  background-color: #ccc;
+  }
+  
+.container1 input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+ }
+
+.container1 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ 
+  
+</style>
+
+<script>
+	function response()
+	{
+		alert("You subscribed newsletter portal successfully");
+	
+	}
+	
+	function responsen()
+	{
+		alert("You Unsubscribed newsletter portal successfully");
+	
+	}
+
+
+</script>
+<body background="img/ea7364cd91458458ad86afaa2aa5585f.jpg">
+
+<div class="navmain">
+
+        <div class="columnImage">
+            <img src="img/px.jpg" width="70%">
+        </div>
+
+        <div class="column50">
+            <div class="title">
+                ZARA.COM
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="search">
+			<a href="#">Dilshika Netthikumarage</a>
+                <input class="inputSearch" type="text" placeholder="search">
+                <button type="button" class="buttonSearch">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+	
+<div class="topnav">
+
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Home/Home.html">Home</a>
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/About%20us/AboutUs.html">About Us</a>
+        <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Contact%20us/contact.html">Contact Us</a>
+		<a class="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Selection/Selection.html">Place Order</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Helpus/HelpUs.html">Help us</a>
+		<a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Work%20With%20Us/workWithUs.html">Work with us</a>
+		<a class="active">Newsletter</a>
+
+		<div class="topnav-right">
+            <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Registration%20page/Registration.html">Sign Up</a>
+            <a href="file:///C:/Users/Dilshika/Desktop/HTML%20PAGES/Login%20page/Login.html">Login</a>
+        </div>
+
+</div>
+
+<center><h1> Newsletter</h1></center>
+
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Subscribe to our newsletter and we will send you news and information about new trends every week .</p>
+  </div>
+
+  <div class="container">
+    
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+  
+  <div class="container">
+  <h2>Sections of your interest</h2>
+	<label class="container1">Woman
+  		<input type="checkbox" checked="checked">
+  		<span class="checkmark"></span>
+	</label>
+    <br><br>
+    
+	<label class="container1">Man
+  		<input type="checkbox">
+  		<span class="checkmark"></span>
+	</label>
+    <br><br>
+    
+
+    <label class="container1">Kids
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <br><br>
+    <label class="container1">I have read and understand the privecy and cookies policy.and agree to receive personalised commercial communication from ZARA by email.
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <br><br>
+  </div>
+  
+  <br><br>
+  <div class="container">
+    <input type="submit" value="Subscribe" name="subscribebtn" onclick="response()"></input>
+  </div>
+  
+  
+  <div class="container">
+  <h2>Do you email address you used to subscribe and click on unsubscribe?.</h2>
+  
+  <p>Enter the email address you used to subscribe and click on unsubscribe.</p>
+   <input type="text" placeholder="Email address" name="mail" required>
+  </div>
+  <br><br>
+ 
+  <div class="container">
+    <input type="submit" value="Unsubscribe" name="unsubscribebtn" onclick="responsen()">
+  </div>
+  
+  <div class="footerHome" height="50%">
+        <div class="columnfooter">
+            <span>
+                <h3>Zara.com</h3>
+            
+        </div>
+        <div class="column50footer">
+            
+            <p>
+                <a style ="text-decoration:none; color:#fff !important;" href="privacy.html">Privacy Policy</a><br>
+				<a style ="text-decoration:none; color:#fff !important;" href="socialmedia.html">Facebook</a><br>
+				<a style ="text-decoration:none; color:#fff !important;" href="socialmedia.html">Twiiter</a><br>
+				<a style ="text-decoration:none; color:#fff !important;" href="socialmedia.html">Youtube</a></br>
+			</p>
+			<h5>Designed by RSPO(Pvt) Ltd.</h5>
+        </div>
+        <div class="columnfooterright">
+            <span>
+                <i class="fab fa-instagram icons"></i>
+                <i class="fab fa-facebook-f icons"></i>
+                <i class="fab fa-twitter icons"></i>
+            </span>
+        </div>
+    </div>
+	
+  
+</body>
+</html>
